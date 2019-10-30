@@ -1,3 +1,17 @@
-h1 {
+* {
+	font-family: "Open Sans", sans-serif;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+h2 {
 	color: red;
+}
+
+li {
+	list-style-type: none;
+}
+
+.background-image {
+	background-image: url(/photos/crissyField.JPG);
 }
