@@ -1,17 +1,57 @@
 * {
-	font-family: "Open Sans", sans-serif;
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
 }
-h2 {
-	color: red;
+
+body {
+	font-family: "Open Sans", sans-serif;
+	font: normal 18px;
 }
 
 nav li {
-	list-style-type: none;
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+	opacity: 0.4;
+}
+a :hover {
+	opacity: 1;
+}
+
+/* header */
+
+header {
+	/* position: absolute; */
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 20px 100px 0;
+	animation: 2s fadein 0.2s forwards;
+	opacity: 0.05;
+}
+
+header nav {
+	display: flex;
+	margin-right: -10px;
+}
+
+header nav li {
+	margin: 0 20px;
+}
+
+header h1 {
+	color: red;
+}
+
+@keyframes fadein {
+	100% {
+		opacity: 1;
+	}
 }
 
 .background-image {
-	background-image: url(/photos/crissyField.JPG);
+	background-image: url(photos/crissyField.jpg);
 }
