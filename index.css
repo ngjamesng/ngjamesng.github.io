@@ -20,17 +20,24 @@ a {
 a :hover {
 	opacity: 1;
 }
+section {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 70px 50px;
+}
 
 /* header */
 
 header {
-	/* position: absolute; */
+	position: absolute;
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
 	padding: 20px 100px 0;
-	animation: 2s fadein 0.2s forwards;
-	opacity: 0.05;
+	animation: 2s fadein 0.5s forwards;
+	opacity: 0.02;
+	width: 100%;
 }
 
 header nav {
@@ -52,6 +59,27 @@ header h1 {
 	}
 }
 
-.background-image {
+/* landing Page Style */
+.landing {
+	position: relative;
+	justify-content: center;
+	text-align: center;
+	min-height: 100vh;
+}
+
+.landing .background-image {
+	background-color: royalblue;
+	background-size: cover;
 	background-image: url(photos/crissyField.jpg);
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+
+	z-index: -1;
+}
+
+.landing h1 {
+	margin-bottom: 10px;
 }
