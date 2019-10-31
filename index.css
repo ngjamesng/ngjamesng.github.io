@@ -15,6 +15,7 @@ li {
 
 a:hover {
 	opacity: 1;
+	transition: .3s;
 }
 section {
 	display: flex;
@@ -22,6 +23,10 @@ section {
 	align-items: center;
 	padding: 70px 50px;
 	min-height: 100vh;
+}
+
+section:not(.landing):nth-child(even) {
+	background-color: #b4b4b4;
 }
 
 /* header */
@@ -96,13 +101,12 @@ header h1 {
 	opacity: 0;
 	animation: 3s fadeInAndBlur 2s forwards;
 	z-index: -1;
-	filter: blur(0px);
 }
 
 @keyframes fadeInAndBlur {
 	100% {
 		opacity: 1;
-		filter: blur(2px);
+		filter: blur(4px);
 	}
 }
 
@@ -115,13 +119,13 @@ header h1 {
 .landing a {
 	color: #78bbf9;
 	text-shadow: 0px 0px 2px black, 0px 0px 3px black, 0px 0px 3px black;
-
 	text-decoration: none;
 }
 
 /* About section */
-.about p {
+.about {
 	display: flex;
+	justify-content: space-between;
 }
 
 #skills-container {
@@ -132,5 +136,14 @@ header h1 {
 
 #skills-container li {
 	width: 100px;
-	margin: 50px;
+	margin: 20px 50px;
+	text-align: center;
+}
+
+/* Projects section */
+.projects-container {
+	display: flex;
+	flex-grow: 1;
+	flex-direction: column;
+	justify-content: space-evenly;
 }
