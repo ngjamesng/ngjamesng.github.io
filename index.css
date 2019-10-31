@@ -13,11 +13,7 @@ nav li {
 	list-style: none;
 }
 
-a {
-	text-decoration: none;
-	opacity: 0.4;
-}
-a :hover {
+a:hover {
 	opacity: 1;
 }
 section {
@@ -25,19 +21,27 @@ section {
 	flex-direction: column;
 	align-items: center;
 	padding: 70px 50px;
+	min-height: 100vh;
 }
 
 /* header */
 
 header {
+	background: black;
 	position: absolute;
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
-	padding: 20px 100px 0;
+	padding: 10px 100px;
 	animation: 2s fadein 0.5s forwards;
 	opacity: 0.02;
 	width: 100%;
+	z-index: 1;
+}
+
+header a {
+	text-decoration: none;
+	opacity: 0.4;
 }
 
 header nav {
@@ -46,11 +50,15 @@ header nav {
 }
 
 header nav li {
-	margin: 0 20px;
+	margin: 0 10px;
+}
+
+header nav li a {
+	color: white;
 }
 
 header h1 {
-	color: red;
+	color: #78bbf9;
 }
 
 @keyframes fadein {
@@ -86,10 +94,27 @@ header h1 {
 	width: 100%;
 	height: 100%;
 	opacity: 0;
-	animation: 2s fadein 2s forwards;
+	animation: 3s fadeInAndBlur 2s forwards;
 	z-index: -1;
+	filter: blur(0px);
+}
+
+@keyframes fadeInAndBlur {
+	100% {
+		opacity: 1;
+		filter: blur(2px);
+	}
 }
 
 .landing h1 {
 	margin-bottom: 10px;
+	color: white;
+	text-shadow: 0px 0px 2px black, 0px 0px 3px black, 0px 0px 3px black;
+}
+
+.landing a {
+	color: #78bbf9;
+	text-shadow: 0px 0px 2px black, 0px 0px 3px black, 0px 0px 3px black;
+
+	text-decoration: none;
 }
