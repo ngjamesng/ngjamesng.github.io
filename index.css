@@ -67,16 +67,26 @@ header h1 {
 	min-height: 100vh;
 }
 
-.landing .background-image {
-	background-color: royalblue;
+.landing .background-color {
+	background-color: #b4b4b4;
 	background-size: cover;
-	background-image: url(photos/crissyField.jpg);
 	position: absolute;
 	top: 0;
 	left: 0;
 	width: 100%;
 	height: 100%;
-
+	z-index: -2;
+}
+.landing .background-image {
+	background-size: cover;
+	background-image: url(photos/landingPageImage.jpg);
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	opacity: 0;
+	animation: 2s fadein 2s forwards;
 	z-index: -1;
 }
 
