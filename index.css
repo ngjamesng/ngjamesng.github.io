@@ -49,11 +49,12 @@ header {
 	right: 0;
 	left: 0;
 	top: 0;
+	backdrop-filter: blur(3px);
 }
 
 header a {
 	text-decoration: none;
-	opacity: 0.4;
+	opacity: 1;
 }
 
 header nav {
@@ -75,7 +76,7 @@ header h1 {
 
 @keyframes fadein {
 	100% {
-		opacity: 0.8;
+		opacity: 0.7;
 	}
 }
 
