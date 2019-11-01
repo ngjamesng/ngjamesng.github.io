@@ -38,11 +38,12 @@ header {
 	background: black;
 	position: absolute;
 	display: flex;
+	flex-wrap: wrap;
 	align-items: center;
 	justify-content: space-between;
 	padding: 10px 100px;
 	animation: 2s fadein 0.5s forwards;
-	opacity: 0.02;
+	opacity: 0;
 	width: 100%;
 	z-index: 1;
 	position: fixed;
@@ -59,7 +60,6 @@ header a {
 
 header nav {
 	display: flex;
-	margin-right: -10px;
 }
 
 header nav li {
