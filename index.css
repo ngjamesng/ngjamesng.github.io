@@ -22,7 +22,6 @@ section {
 	flex-direction: column;
 	align-items: center;
 	padding: 70px 50px;
-	min-height: 100vh;
 }
 
 section:not(.landing):nth-child(even) {
@@ -154,9 +153,25 @@ header h1 {
 	width: 20rem;
 }
 
-/* .projects-container figure {
+/* contact section */
+
+section.contact {
+	display: flex;
+	flex-direction: row;
+	padding: 30px 50px;
+}
+
+section.contact div {
 	padding: 30px;
 }
 
-.projects-container figure img {
-} */
+#contact-links {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+
+#contact-links li {
+	padding: 10px;
+	flex-grow: 1;
+}
