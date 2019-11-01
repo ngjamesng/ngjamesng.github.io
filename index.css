@@ -1,3 +1,7 @@
+html {
+	scroll-behavior: smooth;
+}
+
 * {
 	margin: 0;
 	padding: 0;
@@ -41,6 +45,10 @@ header {
 	opacity: 0.02;
 	width: 100%;
 	z-index: 1;
+	position: fixed;
+	right: 0;
+	left: 0;
+	top: 0;
 }
 
 header a {
@@ -67,7 +75,7 @@ header h1 {
 
 @keyframes fadein {
 	100% {
-		opacity: 1;
+		opacity: 0.8;
 	}
 }
 
@@ -109,10 +117,25 @@ header h1 {
 	}
 }
 
-.landing h1 {
+#landing-large-text {
 	margin-bottom: 10px;
 	color: white;
 	text-shadow: 0px 4px 3px black, 0px 7px 10px black;
+	margin-bottom: 300px;
+	animation: 1s slidefade 3s forwards;
+	opacity: 0;
+}
+
+.landing a {
+	opacity: 0;
+	animation: 1s slidefade 3s forwards;
+}
+
+@keyframes slidefade {
+	100% {
+		opacity: 1;
+		margin: 0;
+	}
 }
 
 .landing a {
@@ -159,6 +182,7 @@ section.contact {
 	display: flex;
 	flex-direction: row;
 	padding: 30px 50px;
+	flex-wrap: wrap;
 }
 
 section.contact div {
