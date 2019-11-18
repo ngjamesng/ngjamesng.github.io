@@ -100,7 +100,7 @@ header h1 {
 }
 .landing .background-image {
 	background-size: cover;
-	background-image: url(photos/landingPageImage.jpg);
+	background-image: url(files/landingPageImage.jpg);
 	position: absolute;
 	top: 0;
 	left: 0;
