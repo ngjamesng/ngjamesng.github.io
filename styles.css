@@ -163,6 +163,17 @@ header h1 {
 	text-align: center;
 }
 
+@media (max-width: 600px) {
+	#skills-container li {
+		width: 50px;
+		margin: 10px;
+	}
+	.projects-container div.card {
+		margin: 10px;
+		width: 20rem;
+	}
+}
+
 /* Projects section */
 .projects-container {
 	display: flex;
