@@ -211,10 +211,10 @@ section.contact div {
 		width: 20rem;
 	}
 	section {
-		margin: 10px;
+		margin: 0px;
 		padding: 10px;
 	}
 	section.contact {
-		padding: 10px;
+		padding: 5px;
 	}
 }
