@@ -202,6 +202,9 @@ section.contact div {
 }
 
 @media (max-width: 600px) {
+	h2 {
+		padding: 20px 0px 0px 0px;
+	}
 	#skills-container li {
 		width: 70px;
 		margin: 10px;
