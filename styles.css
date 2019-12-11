@@ -203,7 +203,7 @@ section.contact div {
 
 @media (max-width: 600px) {
 	#skills-container li {
-		width: 50px;
+		width: 70px;
 		margin: 10px;
 	}
 	.projects-container div.card {
@@ -211,7 +211,7 @@ section.contact div {
 		width: 20rem;
 	}
 	section {
-		margin: 0px;
+		margin: 10px;
 		padding: 10px;
 	}
 	section.contact {
